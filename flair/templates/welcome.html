@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<section class="home">
+        <div class="container">
+            <div class="animate__animated animate__bounce  h-text">
+                <div class="h-logo">
+                    <a class="animate__slideInDown" href=""><img  src="{{url_for('view.static', filename='img/logo.png')}}" alt="logo"></a>
+                </div>
+                <h1>Flair</h1>
+            </div>
+    
+            <div class="logo-container">
+                <div class="logo-box">
+
+                </div>
+                <div class="logo-box-inside">
+                    <div class="logo">
+                        <img src="{{url_for('view.static', filename='img/avatar.svg')}}" alt="">
+                    </div>
+                    <div class="logo-text">
+                        <div id="line1"></div>
+                        <h3>
+                            Welcome <span id="speech"></span>
+                        </h3>
+                        <div id="line2"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+                <div class=" text-bottom">
+                    <a href="{{url_for('view.signin')}}">Let get started....</a> 
+                </div>
+           
+    
+        </div>
+       
+</section>
+
+
+    
+
+{% endblock content %}

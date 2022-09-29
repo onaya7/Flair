@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+<section class="auth">
+    <div class="auth-container">
+        <div class="a-logo">
+            <a href="{{url_for('view.welcome')}}"><img src="{{url_for('view.static', filename='img/logo.png')}}" alt="logo"></a>
+        </div>
+        <h3>Sign In</h3>
+
+        <div class="form-container">
+            <form action="#">
+                <input type="text" name="fname" placeholder="Username" required>
+                <input type="password" name="pword" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+
+            <div class="form-text">
+                <div class="check">
+                    <input type="checkbox"> 
+                    <p>Remember me</p>
+                </div>
+                
+                <p>Forgot password?</p>
+            </div>
+        </div>
+
+        <p>Don't have an account?<a href="">Sign up</a></p>
+    </div>
+</section>
+   
+<i id="gamepad"><iconify-icon icon="mdi:gamepad-variant-outline"></iconify-icon></i>
+<i id="gamepad-up"><iconify-icon icon="mdi:gamepad-up"></iconify-icon></i>
+
+{% endblock content %}
